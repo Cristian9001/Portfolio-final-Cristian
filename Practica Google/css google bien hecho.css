@@ -1,0 +1,112 @@
+.partearribaizq{
+    display: flex;
+    gap: 15px;
+    margin-left: 10px;
+    margin-top: 20px;
+}
+
+.partearribader{
+    display: flex;
+    align-items: right;
+    justify-content: end;
+    gap: 15px;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 110px;
+}
+
+.busqueda{
+    display: flex;
+    position: relative;
+    padding-left: 30px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.iconolupa{
+    position: absolute;
+    left: 578px;
+    top: 30%;
+}
+
+.iconomicro{
+    position: relative;
+    left: 900px;
+    bottom: 20px;
+}
+
+.iconolens{
+    position: relative;
+    left: 910px;
+    bottom: 20px;
+}
+
+.buscargoogle{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.suerte{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.partemediobajo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.partemedioabajo2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.ofrecido{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.parteabajoizq{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 230px;
+    background-color: gainsboro;
+}
+
+.parteabajoizq2{
+    display: flex;
+    background-color: gainsboro;
+    height: 21px;
+    gap: 15px;
+}
+
+.parteabajomedio{
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: gainsboro;
+}
+
+.parteabajoder{
+    display: flex;
+    justify-content: right;
+    gap: 15px;
+    margin-right: 10px;
+    background-color: gainsboro;
+}
+
