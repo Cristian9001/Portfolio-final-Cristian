@@ -8,3 +8,69 @@ document.getElementById('boton-cambio').addEventListener('click', function() {
         this.textContent = 'Modo Claro';
     }
 });
+
+//Script para validar el nombre, el correo y el mensaje
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); 
+
+    var nombre = document.getElementById('nombre').value;
+    var correo = document.getElementById('correo').value;
+    var mensaje = document.getElementById('mensaje').value;
+    var mensajeError = document.getElementById('mensajeError');
+
+    //Esto es para validar que el cuadrado del nombre esta lleno o no
+    if (nombre === '') {
+        mensajeError.textContent = "Por favor completa el campo Nombre";
+        return;
+    }
+
+    //Esto es para validar que el cuadrado del correo esta lleno o no
+    if (correo=== '') {
+        mensajeError.textContent = "Por favor completa el campo Correo electrónico";
+        return;
+    }
+
+    //Esto es para validar que el cuadrado del mensaje esta lleno o no
+    if (mensaje=== '') {
+        mensajeError.textContent = "Por favor completa el campo Mensaje";
+        return;
+    }
+
+    //Esto es para validar si el correo es valido o no
+    if (!isValidEmail(correo)) {
+        mensajeError.textContent = "Correo electrónico inválido";
+        return;
+    }
+
+    //Funcion para verificar el correo con sus partes
+    function isValidEmail(email) {
+        if (!email){
+            return false;
+        }
+        var parts = email.split('@');
+        
+        if (parts.length !== 2) {
+            return false;
+        }
+        
+        if (parts[1].indexOf('.') === -1){
+            return false;
+        }
+        return true;
+    }
+});
+
+//Script para manejar el menú hamburguesa
+document.addEventListener('DOMContentLoaded', function() {
+    const menuIcono = document.querySelector('.menu-icono');
+    const menu = document.querySelector('.menu');
+
+    menuIcono.addEventListener('click', function() {
+        menu.classList.toggle('active');
+        toggleIcono();
+    });
+
+    function toggleIcono() {
+        menuIcono.classList.toggle('open');
+    }
+});
