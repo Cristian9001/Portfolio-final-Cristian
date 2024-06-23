@@ -31,7 +31,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     header("Location: formulario.html?enviado=true");
     exit;
 } else {
-    // Si alguien intenta acceder a este archivo directamente, redirigir de vuelta al formulario
+    //Si alguien intenta acceder a este archivo directamente, redirigir de vuelta al formulario
     header("Location: formulario.html");
     exit;
 }

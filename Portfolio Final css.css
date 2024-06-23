@@ -20,7 +20,6 @@ html, body {
     text-shadow: 3px 0px 20px rgba(0, 200, 255, 0.5);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     padding: 20px;
-    padding: 40px;
 }
 
 .footer {
@@ -34,7 +33,6 @@ html, body {
     padding: 20px;
     margin-top: -15px;
     padding: 40px;
-    margin-top: 0px;
 }
 
 .redes_sociales {
@@ -69,7 +67,6 @@ html, body {
     color: rgb(17, 164, 197);
     width: 100%;
     padding: 20px;
-    padding: 40px;
 }
 
 .descripcion3 {
