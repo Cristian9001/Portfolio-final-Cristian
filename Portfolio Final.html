@@ -12,19 +12,31 @@
         <div class="titulo1">
             <h1>Buenas, soy Cristian</h1>
         </div>
+        <div class="arriba">
+            <div id="menuHamburguesa">☰</div>
+            </div>
+            <nav id="menu" class="menu">
+            <a href="#sobremi">Sobre mi</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#contacto">Contacto</a>
+            </nav>
     </header>
     <main>
-        <div class="descripcion1">
-            <h3><u>Sobre mí:</u></h3>
-            <p>Buenas! Mi nombre es Cristian, tengo 20 años y vengo del curso de Grado Superior de Informática del Campico.</p>
-            <p>Actualmente estoy estudiando informática sobre cosas como programación, creación de páginas web, creación de bases de datos, uso de GIT, y más!!</p>
-            <p>De pequeño estudié en un colegio en Callosa de Segura donde me saqué la Primaria y la ESO; después me metí a un curso de informática donde nos enseñaron a desmontar y montar ordenadores, usar varios programas y más; y ya después me metí al Campico donde me saqué el Grado Medio y actualmente sigo con el Grado Superior.</p>
+        <div class="descripcion1" id="sobremi">
+            <div class="titulo-mi">
+                <h1><u>Sobre mí:</u></h1>
+            </div>
+            <div class="texto-mi">
+                <p>Buenas! Mi nombre es Cristian, tengo 21 años y vengo del curso de Grado Superior de Informática del Campico.</p>
+                <p>Actualmente estoy estudiando informática sobre cosas como programación, creación de páginas web, creación de bases de datos, uso de GIT, y más!!</p>
+                <p>De pequeño estudié en un colegio en Callosa de Segura donde me saqué la Primaria y la ESO; después me metí a un curso de informática donde nos enseñaron a desmontar y montar ordenadores, usar varios programas y más; y ya después me metí al Campico donde me saqué el Grado Medio y actualmente sigo con el Grado Superior.</p>
+            </div>
         </div>
         <div class="descripcion2">
             <div class="text_proyectos">
-                <h1><u>Proyectos:</u></h3>
+                <h1><u>Proyectos:</u></h1>
             </div>
-            <div class="proyectos">
+            <div class="proyectos" id="proyectos">
                 <div class="proyecto1">
                     <h4 class="texto-google">Proyecto Google:</h4>
                     <a href="file:///C:/Users/rodri/OneDrive/Escritorio/Clases/LMGSI/Practica%20Google/Google%20bien%20hecho.html">
@@ -58,7 +70,7 @@
                 <br>
                 <div class="proyecto4">
                     <h4 class="texto-folio">Proyecto Portfolio Ejemplo</h4>
-                    <img src="img/proyecto_html.png" class="foto-folio" alt="Imagen del proyecto de HTML"">
+                    <img src="img/proyecto_html.png" class="foto-folio" alt="Imagen del proyecto de HTML">
                     <div class="text-folio">
                         <h5>Proyecto sobre crear un ejemplo de un Portfolio.</h5>
                         <p>En este proyecto tuve que crear mi primer Portfolio. Tuve que usar divs para poder separar partes del Portfolio.</p>
@@ -68,7 +80,8 @@
         </div>
     </main>
     <br>
-    <footer class="footer">
+    <footer class="footer" id="contacto">
+        <div class="titulo-contactar"><h1><u>Contacto:</u></h1></div>
         <div class="descripcion3">
             <h2>Este ha sido mi Portfolio y un poco de lo que he hecho</h2>
         </div>
@@ -81,22 +94,22 @@
             <img src="img/icono x (twitter).png" alt="Imagen de icono del nuevo twitter con su nuevo logo" width="30px" height="30px">
             <img src="img/icono youtube.png" alt="Imagen de icono de youtube" width="30px" height="25px">
         </div>
-        <div class="texto-formulario">
-            <h4>Aqui puede mandarme un mensaje por si le interesa saber algo o tiene una duda:</h4>
-        </div>
         <div class="formulario">
-            <table>
-                <tr>
-                    <td>
-                        <form action="enviar.php" method="post">
-                            <input type="text" name="nombre" placeholder="Nombre" required><br><br>
-                            <input type="email" name="correo" placeholder="Correo electrónico" required><br><br>
-                            <input type="text" name="mensaje" placeholder="Mensaje" required></input><br><br>
+            <div class="titulo-formulario">
+                <h4>Aquí puede mandarme un mensaje por si le interesa saber algo o tiene una duda:</h4>
+            </div>  
+            <form action="enviar.php" method="post">
+                <table>
+                    <tr>
+                        <td>
+                            <input type="text" name="nombre" placeholder="Nombre"><br><br>
+                            <input type="email" name="correo" placeholder="Correo electrónico"><br><br>
+                            <textarea name="mensaje" placeholder="Mensaje" rows="4"></textarea><br><br>
                             <input type="submit" class="envio" value="Enviar">
-                        </form>
-                    </td>
-                </tr>
-            </table>
+                        </td>
+                    </tr>
+                </table>
+            </form>
         </div>
     </footer>
     <script src="script.js"></script>
