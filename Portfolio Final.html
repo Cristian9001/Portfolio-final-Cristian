@@ -7,19 +7,20 @@
     <link rel="stylesheet" href="Portfolio Final css.css">
 </head>
 <body>
-    <button id="boton-cambio" class="boton-cambio">Modo Claro</button>
     <header>
+        <button id="boton-cambio" class="boton-cambio">Modo Claro</button>
         <div class="titulo1">
             <h1>Buenas, soy Cristian</h1>
-        </div>
-        <div class="arriba">
-            <div id="menuHamburguesa">☰</div>
+            <div class="arriba">
+                <div id="menuHamburguesa">☰</div>
+                
+                <nav id="menu" class="menu">
+                <a href="#sobremi">Sobre mi</a>
+                <a href="#proyectos">Proyectos</a>
+                <a href="#contacto">Contacto</a>
+                </nav>
             </div>
-            <nav id="menu" class="menu">
-            <a href="#sobremi">Sobre mi</a>
-            <a href="#proyectos">Proyectos</a>
-            <a href="#contacto">Contacto</a>
-            </nav>
+        </div> 
     </header>
     <main>
         <div class="descripcion1" id="sobremi">
@@ -98,14 +99,15 @@
             <div class="titulo-formulario">
                 <h4>Aquí puede mandarme un mensaje por si le interesa saber algo o tiene una duda:</h4>
             </div>  
-            <form action="enviar.php" method="post">
+            <form id="contactForm" action="enviar.php" method="post">
                 <table>
                     <tr>
                         <td>
-                            <input type="text" name="nombre" placeholder="Nombre"><br><br>
-                            <input type="email" name="correo" placeholder="Correo electrónico"><br><br>
-                            <textarea name="mensaje" placeholder="Mensaje" rows="4"></textarea><br><br>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre"><br><br>
+                            <input type="email" id="correo" name="correo" placeholder="Correo electrónico"><br><br>
+                            <textarea id="mensaje" name="mensaje" placeholder="Mensaje" rows="4"></textarea><br><br>
                             <input type="submit" class="envio" value="Enviar">
+                            <div id="mensajeError" style="color:red;"></div>
                         </td>
                     </tr>
                 </table>

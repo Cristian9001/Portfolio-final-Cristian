@@ -17,7 +17,7 @@ document.getElementById('contactForm').addEventListener('submit', function(event
     var correo = document.getElementById('correo').value;
     var mensaje = document.getElementById('mensaje').value;
     var mensajeError = document.getElementById('mensajeError');
-
+    
     //Esto es para validar que el cuadrado del nombre esta lleno o no
     if (nombre === '') {
         mensajeError.textContent = "Por favor completa el campo Nombre";
